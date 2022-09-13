@@ -1,2 +1,2 @@
-# react-ts-awesome-query-builder2
+# react-ts-awesome-query-builder
 Created with CodeSandbox
