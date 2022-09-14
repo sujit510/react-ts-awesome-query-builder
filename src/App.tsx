@@ -1,12 +1,14 @@
-import "./styles.css";
-import { Demo } from "./Demo/Demo";
+import React, { useState } from 'react';
+import './App.css';
+import { RAQBWrapper } from './RAQBWrapper/RAQBWrapper';
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <Demo />
-    </div>
-  );
-}
+const App: React.FC = () => {
+    return (
+        <div className="App">
+            <h3>Welcome to React Awesome Query Builder Demo!</h3>
+            <RAQBWrapper />
+        </div>
+    );
+};
+
+export default App;
