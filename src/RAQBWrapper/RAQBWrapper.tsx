@@ -124,6 +124,17 @@ export const RAQBWrapper: React.FC = () => {
                     </pre>
                 </div>
                 <div>
+                    Elastic Search query:{' '}
+                    <pre>
+                        {JSON.stringify(
+                            QbUtils.elasticSearchFormat(
+                                state.tree,
+                                state.config
+                            )
+                        )}
+                    </pre>
+                </div>
+                {/* <div>
                     SQL where:{' '}
                     <pre>
                         {JSON.stringify(
@@ -138,7 +149,7 @@ export const RAQBWrapper: React.FC = () => {
                             QbUtils.jsonLogicFormat(state.tree, state.config)
                         )}
                     </pre>
-                </div>
+                </div> */}
             </div>
         </div>
     );
